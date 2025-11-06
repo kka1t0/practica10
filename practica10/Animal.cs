@@ -16,9 +16,9 @@ namespace practica10
             get { return name; }
             set { name = value; }
         }
-        public Animal(string Name)
+        public Animal(string name)
         {
-
+            Name = name;
         }
         public void Speak()
         {
@@ -47,12 +47,10 @@ namespace practica10
         }
         public Cat(string name, int lives) : base(name)
         {
-            this.Name = name;
             this.Lives = lives;
         }
         public Cat(string name) : base(name)
         {
-            this.Name = name;
             this.Lives = 9;
         }
         public void Meow()
